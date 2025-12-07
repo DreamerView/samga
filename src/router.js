@@ -1,9 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomePage from "./views/Home/Page.vue"
-import AboutPage from "./views/About/Page.vue"
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap";
-import "bootstrap-icons/font/bootstrap-icons.css";
+
+// Lazy-load страниц (каждая страница → отдельный JS chunk)
+const HomePage = () => import("./views/Home/Page.vue")
+const AboutPage = () => import("./views/About/Page.vue")
 
 const routes = [
   {

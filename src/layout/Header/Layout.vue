@@ -9,12 +9,13 @@
                 :srcset="`
                     /logo-min-${storeUI.theme}-40.webp 1x,
                     /logo-min-${storeUI.theme}-80.webp 2x,
-                    /logo-min-${storeUI.theme}-120.webp 3x
+                    /logo-min-${storeUI.theme}-120.webp 3x,
                     /logo-min-${storeUI.theme}-160.webp 4x
                 `"
-                style="height:100%; width:auto;"
+                style="height:100%; width:auto;aspect-ratio: 78/40;"
                 alt="Logo"
-            >
+            />
+
         </div>
         <div class="d-flex align-items-center gap-4 h-100">
             <!-- <input 
