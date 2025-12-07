@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>samga</title>
+  <style>
+    :root {
+      --layout-bg: #ffffff;
+      /* светлая тема */
+    }
+
+    [data-bs-theme="dark"] {
+      --layout-bg: #000000;
+      /* тёмная тема */
+    }
+
+    .bg-layout-body {
+      background-color: var(--layout-bg) !important;
+    }
+  </style>
+</head>
+
+<body class="bg-layout-body" data-bs-theme="light">
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
