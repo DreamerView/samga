@@ -9,7 +9,8 @@ import aosInit from "@/plugins/aos";
 // import "bootstrap/dist/css/bootstrap.min.css";
 // import "bootstrap";
 import "@/styles/bootstrap.scss";
-import "bootstrap-icons/font/bootstrap-icons.css";
+import "@/styles/icons.scss";
+// import "bootstrap-icons/font/bootstrap-icons.css";
 
 const app = createApp(App);
 const pinia = createPinia()

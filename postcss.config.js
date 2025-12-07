@@ -12,20 +12,19 @@ export default {
       ],
       defaultExtractor: content =>
         content.match(/[A-Za-z0-9-_:%/]+/g) || [],
-
       safelist: {
         standard: [
-          /^container/, /^row/, /^col-/,
-          /^d-/, /^flex/, /^justify-/, /^align-/, /^gap-/,
-          /^mt-/, /^mb-/, /^ms-/, /^me-/, /^px-/, /^py-/,
-          /^position-/, /^top-/, /^start-/, /^end-/, /^bottom-/, /^translate-/,
-          /^rounded-/,
-
-          /^btn/, /^badge/,
-
-          /^bg-/, /^text-/,
+          'bi',
+          'bi-house',
+          'bi-compass',
+          'bi-calendar-week',
+          'bi-file-earmark-richtext',
+          'bi-grid',
+          'bi-list',
+          'bi-bell',
+          'bi-chat-dots',
+          'bi-plus-lg',
         ],
-        deep: [/^bi-/],
       }
     })
   ]
