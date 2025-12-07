@@ -13,6 +13,6 @@
 </template>
 
 <script setup>
-    import MainLayout from '../../layout/MainLayout.vue';
-    import ContentCard from '../../components/ContentCard/Component.vue';
+    import MainLayout from '@/layout/MainLayout.vue';
+    import ContentCard from '@/components/ContentCard/Component.vue';
 </script>

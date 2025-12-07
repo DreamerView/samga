@@ -5,7 +5,7 @@
 
 <script setup>
     import { useRoute } from 'vue-router'
-    import { useUIStore } from '../../stores/ui';
+    import { useUIStore } from '@/stores/ui';
     
     const store_ui = useUIStore();
 

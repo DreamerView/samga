@@ -54,6 +54,6 @@
 </style>
 
 <script setup>
-    import { useUIStore } from '../../stores/ui';
+    import { useUIStore } from '@/stores/ui';
     const storeUI = useUIStore()
 </script>

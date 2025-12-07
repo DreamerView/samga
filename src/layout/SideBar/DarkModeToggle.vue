@@ -16,7 +16,7 @@
         ref,
         onMounted
     } from "vue";
-    import { useUIStore } from "../../stores/ui";
+    import { useUIStore } from "@/stores/ui";
     const store_ui = useUIStore();
     const enabled = ref(false);
     onMounted(() => {
