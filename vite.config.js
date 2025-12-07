@@ -12,6 +12,13 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     }
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        quietDeps: true,   // скрывает warnings внутри node_modules
+      }
+    }
+  },
   build: {
     target: "esnext",
     minify: "esbuild",
