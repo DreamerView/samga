@@ -20,7 +20,7 @@
 </template>
 
 <script setup>
-import Sidebar from './sidebar/Layout.vue';
+import Sidebar from './SideBar/Layout.vue';
 import Header from "./Header/Layout.vue"
 </script>
 
