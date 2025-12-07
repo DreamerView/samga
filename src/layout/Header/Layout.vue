@@ -1,5 +1,5 @@
 <template>
-    <header class="w-100 px-4 py-3 d-flex align-items-center justify-content-between position-sticky top-0 bg-layout-body" style="height:72px;z-index:999;">
+    <header class="w-100 px-4 py-md-3 py-md-3 d-flex align-items-center justify-content-between position-sticky top-0 bg-layout-body" style="height:60px;z-index:999;">
         <div class="d-flex align-items-center gap-2 h-100">
             <button @click="storeUI.toggleSidebar" style="width:40px;height:40px;" class="btn btn-outline-secondary btn-lg p-0 m-0 border-0 rounded-circle d-md-block d-none">
                 <i class="bi bi-list"></i>
@@ -12,7 +12,7 @@
                     /img/logo/logo-min-${storeUI.theme}-120.webp 3x,
                     /img/logo/logo-min-${storeUI.theme}-160.webp 4x
                 `"
-                style="height:100%; width:auto;aspect-ratio: 78/40;"
+                style="height:auto; width:78;aspect-ratio: 78/40;"
                 alt="Logo"
             />
 

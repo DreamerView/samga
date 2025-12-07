@@ -1,5 +1,5 @@
 <template>
-    <aside :class="props.open?'d-xl-block':''" class="fixed-aside mx-2 py-3 d-none position-sticky" style="top:72px;height:calc(100dvh - 72px)">
+    <aside :class="props.open?'d-xl-block':''" class="fixed-aside mx-2 py-3 d-none position-sticky" style="top:60px;height:calc(100dvh - 60px)">
         <div class="d-flex flex-column gap-3 p-2 justify-content-between h-100 ">
             <div class="d-flex flex-column gap-2">
                 <Link v-for="item in props.list" :title="item.title" :icon="item.icon" :to="item.to" :active="item.active" />
