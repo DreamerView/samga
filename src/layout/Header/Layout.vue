@@ -5,12 +5,12 @@
                 <i class="bi bi-list"></i>
             </button>
             <img
-                :src="`/logo-min-${storeUI.theme}-40.webp`"
+                :src="`/img/logo/logo-min-${storeUI.theme}-40.webp`"
                 :srcset="`
-                    /logo-min-${storeUI.theme}-40.webp 1x,
-                    /logo-min-${storeUI.theme}-80.webp 2x,
-                    /logo-min-${storeUI.theme}-120.webp 3x,
-                    /logo-min-${storeUI.theme}-160.webp 4x
+                    /img/logo/logo-min-${storeUI.theme}-40.webp 1x,
+                    /img/logo/logo-min-${storeUI.theme}-80.webp 2x,
+                    /img/logo/logo-min-${storeUI.theme}-120.webp 3x,
+                    /img/logo/logo-min-${storeUI.theme}-160.webp 4x
                 `"
                 style="height:100%; width:auto;aspect-ratio: 78/40;"
                 alt="Logo"
@@ -42,7 +42,15 @@
                     <span class="visually-hidden">!</span>
                 </span>
             </button>
-            <img src="/avatar.png" style="height: auto;width:40px;aspect-ratio: 1;" class="rounded-circle" />
+            <img
+                :src="`/img/avatar/avatar-40.webp`"
+                :srcset="`
+                    /img/avatar/avatar-40.webp 1x,
+                    /img/avatar/avatar-80.webp 2x,
+                    /img/avatar/avatar-120.webp 3x,
+                    /img/avatar/avatar-160.webp 4x
+                `"
+                width="40" height="40" style="height: 40px;width:40px;" class="rounded-circle" />
         </div>
     </header>
 </template>
