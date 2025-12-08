@@ -1,6 +1,5 @@
 <template>
     <OpenLayout :list="list" :open="store_ui.sidebarOpen" />
-    <ClosedLayout :list="list" :open="store_ui.sidebarOpen" />
 </template>
 
 <script setup>

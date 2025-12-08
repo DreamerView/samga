@@ -1,7 +1,9 @@
 <template>
-    <RouterLink :to="props.to" :class="active?'btn-dark':'btn-outline-dark border-0 text-body hoverEffect'" class="btn px-4 py-2 rounded-4 d-flex gap-3 align-items-center">
-        <i class="fs-5" :class="'bi bi-'+props.icon"></i>
-        <span v-if="show">{{ props.title }}</span>
+    <RouterLink :to="props.to" :class="active?'active':''" class="btn hoverEffect rounded-5 p-0 m-0 d-flex gap-3 align-items-center border-0">
+        <div class="rounded-circle iconBlock p-0 m-0 d-flex align-items-center justify-content-center" style="width:2.5rem;height:2.5rem">
+            <i class="fs-5" :class="'bi bi-'+props.icon"></i>
+        </div>
+        <span class="d-lg-block d-none m-0" v-if="props.show">{{ props.title }}</span>
     </RouterLink>
 </template>
 
@@ -22,11 +24,26 @@
 </script>
 
 <style scoped>
+    .active {
+       background-color:var(--bs-secondary-bg); 
+    }
+    .active > .iconBlock {
+        background-color:var(--bs-emphasis-color);
+        color:var(--bs-body-bg)!important;
+    }
+    .iconBlock {
+        background-color:var(--bs-secondary-bg);
+        color:var(--bs-body-color)!important;
+    }
     .hoverEffect {
-        opacity:0.7
+        padding: 0.4rem!important;
     }
     .hoverEffect:hover {
-        opacity: 1;
-        color:#fff!important;
+        /* color:#fff!important; */
+        background-color:var(--bs-secondary-bg);
+    }
+    .hoverEffect:hover > .iconBlock {
+        background-color:var(--bs-emphasis-color);
+        color:var(--bs-body-bg)!important;
     }
 </style>
