@@ -15,4 +15,25 @@
 <script setup>
     import MainLayout from '@/layout/MainLayout.vue';
     import ContentCard from '@/components/ContentCard/Component.vue';
+    import { supabase } from '@@/plugins/supabase.js'
+    import { ref, onMounted,watchEffect } from 'vue'
+
+    const centers = ref([])
+
+    onMounted(async () => {
+        const { data, error } = await supabase.from('centers').select()
+        if (error) {
+            console.error(error)
+            return
+        }
+        if (!error) centers.value = data
+    })
+
+    onMounted(()=>{
+        window.history.replaceState({}, document.title, window.location.pathname)
+    })
+
+    watchEffect(()=>{
+        console.log(centers.value)
+    })
 </script>

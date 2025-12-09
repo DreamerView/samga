@@ -20,19 +20,19 @@
         },
         {
             title:"Поиск",
-            icon:"compass",
+            icon:"search",
             to:"/about",
             active:route.name === 'about'
         },
         {
             title:"Расписание",
-            icon:"calendar-week",
+            icon:"calendar",
             to:"/about",
             active:route.name === 'about'
         },
         {
             title:"Материалы",
-            icon:"file-earmark-richtext",
+            icon:"book",
             to:"/about",
             active:route.name === 'about'
         },
